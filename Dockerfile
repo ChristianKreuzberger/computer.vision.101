@@ -7,6 +7,6 @@ RUN pip install -r requirements.txt --upgrade
 
 RUN mkdir /app
 
-COPY computer.vision.ipynb fashion-mnist_test.csv.gz fashion-mnist_train.csv.gz fashion-mnist-90.h5 LICENSE /app/
+COPY computer.vision.ipynb fashion-mnist_test.csv.gz fashion-mnist_train.csv.gz fashion-mnist-90.h5 LICENSE api_server.py /app/
 
 WORKDIR /app

@@ -2,7 +2,7 @@ matplotlib
 scikit-learn 
 numpy 
 keras==2.2.2 
-azure-cognitiveservices-vision-customvision 
 tensorflow
 jupyter
 Pillow
+flask_restful

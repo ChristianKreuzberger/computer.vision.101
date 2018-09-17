@@ -27,8 +27,19 @@ ToDo:
 * Start with a volume to persist changes within the notebook and other files
 * Automatically switch to the user that supplied the source files
 
-1. Build: ``docker build --rm -t chkr/computer.vision.101:1.0 .``
-1. Run: ``docker run -p 8888:8888 -it chkr/computer.vision.101:1.0 jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root``
+* Run Jupyter Notebook: 
+ ``docker run -p 8888:8888 -it christiankreuzberger/computer.vision.101:1.0 jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root``
+
+* Run api server
+ ``docker run -p 5000:5000 -it christiankreuzberger/computer.vision.101:1.0 python api_server.py --host=0.0.0.0``
+
+
+# Building the Docker image
+If you plan to make any changes to the docker image, you can build it using
+```bash
+
+docker build --rm -t christiankreuzberger/computer.vision.101:1.0 .
+```
 
 # License 
 
