@@ -131,4 +131,4 @@ app.run(debug=True, host="0.0.0.0")
 
 # Test with
 # curl -F image=@`pwd`/fashion-mnist-handbag.png -X POST http://127.0.0.1:5000/classify
-# # curl -F image=@`pwd`/fashion-mnist-shoe.png -X POST http://127.0.0.1:5000/classify
+# curl -F image=@`pwd`/fashion-mnist-shoe.png -X POST http://127.0.0.1:5000/classify
